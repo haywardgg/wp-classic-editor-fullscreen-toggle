@@ -1,5 +1,5 @@
 # wp-classic-editor-fullscreen-toggle
-Here's a simple, lightweight WordPress plugin that adds a keyboard shortcut (Ctrl+Shift+F) to toggle full-screen mode in the Classic Editor. The plugin is minimal, focused only on the fullscreen toggle feature, and works with either the official plugin or WordPress's built-in classic mode.
+Here's a simple, lightweight WordPress plugin that adds a keyboard shortcut (Ctrl+Shift+F) to toggle full-screen mode in the Classic Editor. The plugin is minimal, focused only on the fullscreen toggle feature, works with the [official classic editor plugin](https://wordpress.org/plugins/classic-editor/) and should work with other classic editor plugins. 
 
 ## How It Works
 
