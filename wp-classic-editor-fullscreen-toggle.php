@@ -55,6 +55,13 @@ class ClassicEditorFullscreenToggle {
     private function get_fullscreen_css() {
         return '
             /* Fullscreen mode styles */
+            
+            body.ceft-fullscreen-mode #content_ifr {
+                height: 100vh !important;
+                width: 100% !important;
+                display: block !important;
+            }
+
             body.ceft-fullscreen-mode #wpcontent {
                 margin-left: 0 !important;
                 padding-left: 0 !important;
