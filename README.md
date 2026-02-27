@@ -19,7 +19,5 @@ Here's a simple, lightweight WordPress plugin that adds a keyboard shortcut (Ctr
 
 ## Optional Floating Button [Untested] 
 
-I've included commented code for a floating circular button that appears when you hover near the bottom-right corner of the screen. 
-
 If you prefer a mouse-based toggle option, uncomment the `addFloatingButton()` line in the JavaScript file.
 
