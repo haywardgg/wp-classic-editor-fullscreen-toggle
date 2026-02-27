@@ -1,5 +1,5 @@
 # wp-classic-editor-fullscreen-toggle
-Here's a simple, lightweight WordPress plugin that adds a keyboard shortcut (Ctrl+Shift+F) to toggle full-screen mode in the Classic Editor.
+Here's a simple, lightweight WordPress plugin that adds a keyboard shortcut (Ctrl+Shift+F) to toggle full-screen mode in the Classic Editor. The plugin is minimal, focused only on the fullscreen toggle feature, and works with the Classic Editor (either the official plugin or WordPress's built-in classic mode).
 
 ## How It Works
 
@@ -17,8 +17,7 @@ Here's a simple, lightweight WordPress plugin that adds a keyboard shortcut (Ctr
 - Footer
 - Other post metaboxes
 
-## Optional Floating Button
+## Optional Floating Button [Untested] 
 
-[Untested] I've included commented code for a floating circular button that appears when you hover near the bottom-right corner of the screen. If you prefer a mouse-based toggle option, uncomment the `addFloatingButton()` line in the JavaScript file.
+I've included commented code for a floating circular button that appears when you hover near the bottom-right corner of the screen. If you prefer a mouse-based toggle option, uncomment the `addFloatingButton()` line in the JavaScript file.
 
-The plugin is minimal, focused only on the fullscreen toggle feature, and works with the Classic Editor (either the official plugin or WordPress's built-in classic mode).
