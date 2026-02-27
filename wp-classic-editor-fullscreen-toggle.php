@@ -6,6 +6,7 @@
  * Version: 1.0
  * Author: HaywardGG
  * License: GPL v2 or later
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: wp-classic-editor-fullscreen-toggle
  */
 
@@ -149,4 +150,7 @@ class ClassicEditorFullscreenToggle {
 }
 
 // Initialize the plugin
-new ClassicEditorFullscreenToggle();
+function wp_classic_editor_fullscreen_toggle_init() {
+    new ClassicEditorFullscreenToggle();
+}
+add_action('plugins_loaded', 'wp_classic_editor_fullscreen_toggle_init');
