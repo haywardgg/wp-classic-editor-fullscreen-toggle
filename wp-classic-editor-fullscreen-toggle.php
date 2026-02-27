@@ -55,6 +55,14 @@ class ClassicEditorFullscreenToggle {
     private function get_fullscreen_css() {
         return '
             /* Fullscreen mode styles */
+
+            :root:has(body.ceft-fullscreen-mode) {
+                --wp-admin--admin-bar--height: 0px !important;
+            }
+
+            body.ceft-fullscreen-mode .wrap {
+                margin: 15px 18px 15px 15px;
+            }
             
             body.ceft-fullscreen-mode #content_ifr {
                 height: 100vh !important;
