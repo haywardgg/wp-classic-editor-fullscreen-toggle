@@ -53,7 +53,7 @@
                 // If in TinyMCE visual mode, trigger resize
                 if (typeof tinyMCE !== 'undefined' && tinyMCE.activeEditor) {
                     setTimeout(function() {
-                        tinyMCE.activeEditor.execCommand('mceResize');
+                        tinyMCE.activeEditor.fire('resize');
                     }, 100);
                 }
             }
@@ -64,8 +64,8 @@
         
         // Keyboard shortcut handler
         $(document).on('keydown', function(e) {
-            // Check for Ctrl+Shift+F (key code 70 for F)
-            if (e.ctrlKey && e.shiftKey && e.keyCode === 70) {
+            // Check for Ctrl+Shift+F
+            if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'f') {
                 e.preventDefault(); // Prevent browser's find dialog
                 toggleFullscreen();
             }
@@ -73,7 +73,7 @@
         
         // Also add a small floating button for mouse users (optional)
         function addFloatingButton() {
-            if ($('#wp-content-wrap .ceft-floating-fullscreen-btn').length === 0) {
+            if ($('.ceft-floating-fullscreen-btn').length === 0) {
                 var $button = $('<button class="ceft-floating-fullscreen-btn" title="Toggle Fullscreen (Ctrl+Shift+F)">⛶</button>');
                 
                 $button.css({
